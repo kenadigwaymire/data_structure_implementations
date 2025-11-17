@@ -87,6 +87,7 @@ class LinkedList():
     - remove -> removes a given node from linked list
     - idx_remove -> removes node at given index
     - pop -> removes item from end of linked list & returns it
+    - delete_list -> deletes linked list
 
     """
 
@@ -301,6 +302,21 @@ class LinkedList():
         last_node = self.get(self.length - 1)
         self.idx_remove(self.length - 1)
         return last_node
+        
+    def delete_list(self):
+        """
+        Deletes linked list.
+
+        ARGUMENTS
+        ---------
+        None
+
+        RETURNS
+        -------
+        None
+        
+        """
+        self.head = None
 
 # Constructing test nodes & list
 def make_test_list_1():
